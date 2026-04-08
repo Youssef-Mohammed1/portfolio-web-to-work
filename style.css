@@ -3,7 +3,7 @@
   --primary-color: #5e40e0;
   --secondary-color: #98ffed;
   --tertiary-color: #dfdfff;
-  --accent-color: #fbfcfd;
+  --accent-color: #f1f1f1;
   --border-radius: 28px;
   --transition: all 0.5s ease;
 }
@@ -277,6 +277,9 @@ header button:active {
   align-items: center;
   width: 100%;
   padding: 96px 0;
+  background: #f1f4f7;
+  color: #2d3337;
+  border-radius: 3rem 3rem 0 0;
 }
 .project-main {
   width: 80%;
@@ -444,4 +447,99 @@ header button:active {
   gap: 8px;
 }
 /*model or new tab to show details */
-/* fiter-category to button  and filter-data to project*/
+
+/*Skills section*/
+#skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 96px 0;
+}
+.skills-main {
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.skills-main .skill-info {
+  font-size: 14px;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.skills-main h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #2d3337;
+  margin: 8px 0 64px;
+}
+.skills-main .skills-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.skills-main .skills-content .skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  color: #2d3337;
+  background-color: #ffffff;
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.skills-main .skills-content .skill-item p {
+  color: #2d3337;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.skills-main .skills-content .skill-item .html-icon {
+  color: #f97316;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1;
+}
+.skills-main .skills-content .skill-item .css-icon {
+  color: #3b82f6;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.skills-main .skills-content .skill-item .js-icon {
+  color: #eab308;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.skills-main .skills-content .skill-item .react-icon {
+  color: #22d3ee;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+.skills-main .skills-content .skill-item .php-icon {
+  color: #818cf8;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.skills-main .skills-content .skill-item .sql-icon {
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.skills-main .skills-content .skill-item:hover {
+  transform: scale(1.1);
+}

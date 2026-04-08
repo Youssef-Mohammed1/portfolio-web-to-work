@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -79,48 +83,100 @@
             </p>
           </div>
           <div class="projects-btns">
-            <button class=" btn-active">Full-Stack Projects</button>
-            <button class="">Frontend Projects</button>
-            <button class="">Backend Projects</button>
+            <button data-filter="fullStackProject" class="btn-active">
+              Full-Stack Projects
+            </button>
+            <button data-filter="frontendProject" class="">
+              Frontend Projects
+            </button>
+            <button data-filter="backendProject" class="">
+              Backend Projects
+            </button>
           </div>
 
           <div class="projects-content">
-            <div class="project-card">
+            <!-- first project -->
+            <div class="project-card" data-category="fullStackProject">
               <div class="card-img">
-                <img src="img/resturant.jpg" alt="" />
+                <img src="img/resturant.jpg" alt="resturant" />
               </div>
               <div class="card-info">
                 <span class="span-act">REACT</span>
                 <span>JS</span>
               </div>
-              <h3>La Case Italiana </h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius labore voluptates repudiandae fuga laudantium minus!</p>
+              <h3>La Case Italiana</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+                labore voluptates repudiandae fuga laudantium minus!
+              </p>
               <a>Case Study <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
-            <div class="project-card">
+            <!-- secound project -->
+            <div class="project-card" data-category="fullStackProject">
               <div class="card-img">
-                <img src="img/system.jpg" alt="" />
+                <img src="img/system.jpg" alt="System Sale" />
               </div>
               <div class="card-info">
                 <span class="span-act">REACT</span>
                 <span>JS</span>
               </div>
               <h3>System Sale</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda hic nemo.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                assumenda hic nemo.
+              </p>
               <a>Case Study <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="project-card">
+
+            <!-- third project -->
+            <div class="project-card" data-category="frontendProject">
               <div class="card-img">
-                <img src="img/porfolio_web.jpeg" alt="" />
+                <img src="img/porfolio_web.jpeg" alt="Portfolio Website" />
               </div>
               <div class="card-info">
                 <span class="span-act">REACT</span>
                 <span>JS</span>
               </div>
               <h3>Portfolio Website</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi recusandae totam nobis beatae atque!</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas modi recusandae totam nobis beatae atque!
+              </p>
               <a>Case Study <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills section -->
+      <section id="skills">
+        <div class="skills-main">
+          <span class="skill-info">TECHNICAL ARSENAL</span>
+          <h2>The Stack of Choice</h2>
+          <div class="skills-content">
+            <div class="skill-item">
+              <span class="html-icon">HTML</span>
+              <p>HTML5</p>
+            </div>
+            <div class="skill-item">
+              <span class="css-icon">CSS</span>
+              <p>CSS3</p>
+            </div>
+            <div class="skill-item">
+              <span class="js-icon">JS</span>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+              <span class="react-icon"><i class="fa-brands fa-react"></i></span>
+              <p>React</p>
+            </div>
+            <div class="skill-item">
+              <span class="php-icon">PHP</span>
+              <p>PHP</p>
+            </div>
+            <div class="skill-item">
+              <span class="sql-icon"><i class="fa-solid fa-database"></i></span>
+              <p>SQL</p>
             </div>
           </div>
         </div>
