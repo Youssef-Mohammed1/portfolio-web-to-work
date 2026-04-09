@@ -1,4 +1,6 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 :root {
   --primary-color: #5e40e0;
   --secondary-color: #98ffed;
@@ -543,3 +545,124 @@ header button:active {
 .skills-main .skills-content .skill-item:hover {
   transform: scale(1.1);
 }
+/*about section*/
+#about {
+  padding: 6rem 0;
+  width: 100%;
+}
+.about-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+/*about image*/
+.about-main .about-image {
+  width: 110%;
+}
+.about-main .about-image .image-content {
+  position: relative;
+  z-index: -1;
+}
+.about-main .about-image .image-content::after {
+  content: "";
+  width: 160px;
+  height: 160px;
+  background: #e6e6fa;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: -1;
+  clip-path: circle(50%);
+}
+.about-main .about-image .image-content img {
+  width: 100%;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+/*about image*/
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: sans-serif;
+}
+.about-info span {
+  font-size: 14px;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.about-info h2 {
+  font-size: 48px;
+  color: #2d3337;
+  font-family: "manrope", sans-serif;
+  font-weight: 700;
+  line-height: 48px;
+}
+.about-info p {
+  font-size: 18px;
+  color: #5a6064;
+  line-height: 30px;
+}
+.about-info .about-number {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  line-height: 24px;
+}
+.about-info .about-number div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.about-info .about-number div .clints {
+  font-size: 30px;
+  color: var(--primary-color);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.about-info .about-number div .clints::after {
+  content: "+";
+  font-size: 30px;
+  color: var(--primary-color);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+.about-info .about-number div .persent {
+  font-size: 30px;
+  color: #006b60;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.about-info .about-number div p{
+  color: #5a6064;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'manrope', sans-serif;
+  line-height: 1.25rem;
+  margin-top: 4px;
+}
+.about-info .text-spy {
+  font-size: 18px;
+  color: #5a6064;
+  font-style: italic;
+  line-height: 29px;
+  margin: 32px 0 0;
+}
+
