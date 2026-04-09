@@ -182,20 +182,27 @@
         </div>
       </section>
       <!-- about section -->
-       <section id="about">
+      <section id="about">
         <div class="about-section">
           <div class="about-main">
             <div class="about-image">
               <div class="image-content">
-                <img src="img/me-2.jpeg" alt="About Me">
+                <img src="img/me-2.jpeg" alt="About Me" />
               </div>
             </div>
 
-
             <div class="about-info">
               <span>The Philosophy</span>
-              <h2>I don't just build <br> websites; I curate digital ecosystems.</h2>
-              <p>With over 8 years of experience as a freelance full-stack developer, I've learned that the best solutions aren't just technically sound—they are emotionally resonant. I bridge the gap between engineering and art.</p>
+              <h2>
+                I don't just build <br />
+                websites; I curate digital ecosystems.
+              </h2>
+              <p>
+                With over 8 years of experience as a freelance full-stack
+                developer, I've learned that the best solutions aren't just
+                technically sound—they are emotionally resonant. I bridge the
+                gap between engineering and art.
+              </p>
               <div class="about-number">
                 <div>
                   <h3 class="clints">150</h3>
@@ -206,11 +213,43 @@
                   <p>CLIENT SATISFACTION</p>
                 </div>
               </div>
-              <p class="text-spy">"Ethereal developer's approach to the UI for our SaaS platform completely transformed our user retention. Logic meets aesthetic perfection."</p>
+              <p class="text-spy">
+                "Ethereal developer's approach to the UI for our SaaS platform
+                completely transformed our user retention. Logic meets aesthetic
+                perfection."
+              </p>
             </div>
           </div>
         </div>
-       </section>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact">
+        <div class="contact-main">
+          <div class="content-text">
+            <span>CONNECT</span>
+            <h2>Let's craft something legendary.</h2>
+          </div>
+          <form action="" method="post">
+            <div class="clint-info">
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+              </div>
+            </div>
+
+            <div class="message">
+              <label for="message">Message </label>
+              <textarea id="message" name="message" rows="5" placeholder="tell me about your project vision..." required></textarea>
+            </div>
+            <button id="sendMessage" class="sm-btn">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>

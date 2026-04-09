@@ -7,7 +7,7 @@
   --tertiary-color: #dfdfff;
   --accent-color: #f1f1f1;
   --border-radius: 28px;
-  --transition: all 0.5s ease;
+  --transition: all 0.3s ease;
 }
 * {
   box-sizing: border-box;
@@ -131,7 +131,8 @@ header button:active {
   font-family: sans-serif;
   font-size: 14px;
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'manrope', sans-serif;
 }
 .hero_info .hero-text {
   display: flex;
@@ -142,9 +143,9 @@ header button:active {
 .hero_info .hero-text h2 {
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
-  font-family: sans-serif;
+  font-family: 'manrope', sans-serif;
   color: var(--primary-color);
 }
 .hero_info .hero-text h1 {
@@ -296,9 +297,9 @@ header button:active {
 }
 
 .head-title span {
-  font-family: sans-serif;
+  font-family: 'manrope', sans-serif;
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -469,8 +470,9 @@ header button:active {
   font-size: 14px;
   color: var(--primary-color);
   letter-spacing: 0.1rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
+  font-family: 'manrope', sans-serif;
 }
 .skills-main h2 {
   font-size: 3rem;
@@ -600,9 +602,10 @@ header button:active {
   font-size: 14px;
   color: var(--primary-color);
   letter-spacing: 0.1rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
+  font-family: 'manrope', sans-serif;
 }
 .about-info h2 {
   font-size: 48px;
@@ -665,4 +668,142 @@ header button:active {
   line-height: 29px;
   margin: 32px 0 0;
 }
+/*contact section*/
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+.contact-main{
+width: 56%;
+margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-main .content-text {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.contact-main .content-text span {
+  font-size: 14px;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-family: 'manrope', sans-serif;
+  text-transform: uppercase;
+}
+.contact-main .content-text h2 {
+  color: #2d3337;
+  font-family: 'manrope', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 8px 0 0;
+}
+.contact-main form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.contact-main form .clint-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+  gap: 24px;
+}
+.contact-main form .clint-info div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact-main form  label {
+  font-size: 14px;
+  color: #2d3337;
+  font-weight: 700;
+  margin-left: 16px;
+  font-family: 'manrope', sans-serif;
+  line-height: 20px;
+}
+.contact-main form .clint-info div input {
+  padding: 16px 24px;
+  border: none ;
+  cursor: text;
+  display: inline-block;
+  font-weight: 400;
+  border-radius: 32px;
+  font-size: 16px;
+  color: #2d3337;
+  font-family: sans-serif;
+  background-color:#e4e7eb ;
+  line-height: 24px;
+  transition: var(--transition);
+}
+.contact-main form .clint-info div input:focus ,.contact-main form .message textarea:focus {
+  outline: 2px solid rgb(94, 64, 224, 0.3);
+}
+.contact-main form .message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  font-size: 16px;
+  color: #2d3337;
+}
+.contact-main form .message textarea {
+  padding: 16px 24px;
+  border: none ;
+  cursor: text;
+  display: inline-block;
+  font-weight: 400;
+  border-radius: 32px;
+  font-size: 16px;
+  color: #2d3337;
+  font-family: sans-serif;
+  background-color:#e4e7eb ;
+  line-height: 24px;
+  transition: var(--transition);
+  resize: none;
+}
+.contact-main form button{
+  color: #fcf7ff;
+  background-color: var(--primary-color);
+  padding: 16px 0px;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'manrope', sans-serif;
+  transition: var(--transition);
+  line-height: 24px;
+  transition: all 0.15s ease;
+  font-family: 'manrope', sans-serif;
+}
+.contact-main form button i{
+  margin-left: 4px;
+  transition: all 0.3s ease;
+}
+.contact-main form button:hover {
+  transform: scale(1.02) translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-main form button:hover i {
+  animation: clickme 0.5s ease-in-out infinite;
+}
+.contact-main form button:active {
+  transform: scale(0.98) translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-main form button:active i {
+  animation: none;
+}
+
 
