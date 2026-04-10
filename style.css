@@ -46,6 +46,7 @@ header {
   transform: translateX(-50%);
   border-radius: 30px;
   box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+  z-index: 500;
 }
 header p {
   font-family: sans-serif;
@@ -58,6 +59,9 @@ header p .nav-highlight {
   font-weight: 600;
 }
 /*nav bar */
+header nav{
+  position: relative;
+}
 header nav ul {
   list-style: none;
   display: flex;
@@ -72,12 +76,19 @@ header nav ul li a {
   transition: var(--transition);
 }
 /*link active*/
-.nav-active {
-  border-bottom: 2px solid #4f46e5;
-  color: #4f46e5;
-}
+
 header nav ul li a:hover {
   color: #4f46e5;
+}
+.indicator {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  border-radius: 5px;
+  background: #4f46e5;
+  transition: all 0.3s ease;
 }
 /*header button*/
 header button {
@@ -372,6 +383,7 @@ header button:active {
   line-height: 24px;
   transition: all 0.3s ease;
   position: relative;
+  z-index: 0;
 }
 /*card image*/
 .card-img {
@@ -562,6 +574,7 @@ header button:active {
   background: #f1f4f7;
   color: #2d3337;
   font-size: 16px;
+  border-radius: 3rem 3rem 0 0;
 }
 .services-main {
   width: 85%;
@@ -858,6 +871,7 @@ margin: auto;
   transition: var(--transition);
   outline: 2px solid transparent;
   resize: none;
+  font-family: "manrope", sans-serif;
 }
 .contact-main form .clint-info div input:focus ,.contact-main form .message textarea:focus {
   outline: 2px solid rgb(94, 64, 224, 0.3);
