@@ -76,6 +76,9 @@ header nav ul li a {
   transition: var(--transition);
 }
 /*link active*/
+.nav-active{
+  color: #4f46e5;
+}
 
 header nav ul li a:hover {
   color: #4f46e5;
@@ -366,7 +369,7 @@ header button:active {
 /*projects-content*/
 .projects-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   gap: 20px;
@@ -374,6 +377,7 @@ header button:active {
 /*project card*/
 .project-card {
   height: 460px; /**/
+  max-width: 400px; 
   padding: 24px;
   color: #2d3337;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -997,4 +1001,7 @@ footer .top-arrow:hover {
 footer .top-arrow:hover i {
   transform: translateY(-3px);
 }
-
+/*filter buttons*/
+.hide{
+  display: none;
+}
