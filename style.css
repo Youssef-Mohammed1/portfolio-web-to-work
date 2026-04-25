@@ -146,7 +146,6 @@ header button:active {
   background: #eaeafd;
   width: fit-content;
   border-radius: 20px;
-  font-family: sans-serif;
   font-size: 14px;
   color: var(--primary-color);
   font-weight: 700;
@@ -230,22 +229,6 @@ header button:active {
 .hero_info .hero-btn .cm-btn:active {
   transform: scale(0.98) translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes clickme {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
 }
 
 /*hero image*/
@@ -353,9 +336,10 @@ header button:active {
   border-radius: var(--border-radius);
   cursor: pointer;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   transition: var(--transition);
   line-height: 20px;
+  font-family: 'Manrope';
 }
 .btn-active {
   background-color: var(--primary-color) !important ;
@@ -1004,4 +988,20 @@ footer .top-arrow:hover i {
 /*filter buttons*/
 .hide{
   display: none;
+}
+/*animation*/
+@keyframes clickme {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
 }
