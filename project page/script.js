@@ -58,7 +58,7 @@ function goToHome(){
 }
 
 function goToContact(){
-    window.location.href = "../index.html#contact";
+    window.location.href = "../../index.html#contact";
 }
 
 hireMeBtn.addEventListener("click", goToHome);

@@ -30,6 +30,11 @@
         <div class="indicator"></div>
       </nav>
       <button id="hireMe">Hire Me</button>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
     <main>
       <!--hero section-->
@@ -85,6 +90,7 @@
               visual creativity, and attention to detail in every piece.
             </p>
           </div>
+          <button id="toggleButton"><i class="fa-solid fa-chevron-down"></i></button>
           <div class="projects-btns">
             <button data-filter="all" class="btn-filter btn-active">All</button>
             <button data-filter="fullStackProject" class="btn-filter">
@@ -290,7 +296,7 @@
             <span>CONNECT</span>
             <h2>Let's craft something legendary.</h2>
           </div>
-          <form action="" method="post">
+          <form method="post" id="contactForm">
             <div class="clint-info">
               <div class="name">
                 <label for="name">Name</label>
@@ -324,7 +330,7 @@
                 required
               ></textarea>
             </div>
-            <button id="sendMessage" class="sm-btn">
+            <button type="submit" id="sendMessage" class="sm-btn">
               Send Message <i class="fa-regular fa-paper-plane"></i>
             </button>
           </form>
@@ -361,11 +367,12 @@
         </a>
       </div>
       <div>
-        <button class="top-arrow">
+        <button class="top-arrow" id="topArrow">
           Back To Top <span> <i class="fa-solid fa-arrow-up"></i></span>
         </button>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
