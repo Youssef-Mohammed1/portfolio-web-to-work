@@ -54,7 +54,7 @@ let observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.65, // يعني السكشن لازم يكون ظاهر 65% عشان يتحسب active
+    threshold: 0.3, // يعني السكشن لازم يكون ظاهر 65% عشان يتحسب active
   },
 );
 
@@ -146,7 +146,7 @@ function turnoff() {
   }
 }
 /*************************** */
-
+/**************************************************************************************** */
 /*email js */
 emailjs.init("Zh8nySsmxN3kG-4tU"); // Puplic key
 
@@ -207,16 +207,14 @@ navLinks.forEach(link => {
     menuToggle.classList.remove("open");
   });
 });
+
+
 /* toggleButton */
 toggleButton.addEventListener("click",() =>{
   projectsBtns.classList.toggle("toggleactive");
   document.querySelector("#toggleButton i").classList.toggle("toggleButtonOpen");
 });
-// toggleButton.addEventListener("click",()=>{
-// filterButtons.forEach((btn) =>{
-// btn.classList.toggle("toggleactive")
-// });
-// });
+/*close when click on any button */
 filterButtons.forEach((btn) =>{
   btn.addEventListener("click",() => {
       projectsBtns.classList.remove("toggleactive");

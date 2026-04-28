@@ -1,7 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-:root {
+﻿:root {
   --primary-color: #5e40e0;
   --secondary-color: #98ffed;
   --tertiary-color: #dfdfff;
@@ -27,7 +24,6 @@ body {
     var(--accent-color) 40%,
     var(--accent-color) 70%
   );
-
 }
 /*nav bar*/
 header {
@@ -59,7 +55,7 @@ header p .nav-highlight {
   font-weight: 600;
 }
 /*nav bar */
-header nav{
+header nav {
   position: relative;
 }
 header nav ul {
@@ -76,7 +72,7 @@ header nav ul li a {
   transition: var(--transition);
 }
 /*link active*/
-.nav-active{
+.nav-active {
   color: #4f46e5;
 }
 
@@ -123,8 +119,6 @@ header .menu-toggle {
   justify-content: space-between;
   cursor: pointer;
   margin-right: 10px;
-  
-  
 }
 
 header .menu-toggle span {
@@ -178,6 +172,7 @@ header .menu-toggle span {
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 20px;
+  gap: 65px;
 }
 
 .hero_info .hero-text .info span {
@@ -190,7 +185,7 @@ header .menu-toggle span {
   font-size: 14px;
   color: var(--primary-color);
   font-weight: 700;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
 }
 .hero_info .hero-text {
   display: flex;
@@ -203,7 +198,7 @@ header .menu-toggle span {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   color: var(--primary-color);
 }
 .hero_info .hero-text h1 {
@@ -338,7 +333,7 @@ header .menu-toggle span {
 }
 
 .head-title span {
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   color: var(--primary-color);
   font-weight: 700;
   font-size: 14px;
@@ -379,7 +374,7 @@ header .menu-toggle span {
   font-weight: 700;
   transition: var(--transition);
   line-height: 20px;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 .btn-active {
   background-color: var(--primary-color) !important ;
@@ -391,7 +386,7 @@ header .menu-toggle span {
   background-color: rgb(94, 64, 224, 0.1);
 }
 /*toggleButton*/
-#toggleButton{
+#toggleButton {
   padding: 12px 32px;
   display: none;
   background-color: var(--primary-color) !important ;
@@ -403,23 +398,23 @@ header .menu-toggle span {
   font-weight: 700;
   transition: var(--transition);
   line-height: 20px;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   width: 100%;
 }
-#toggleButton i{
+#toggleButton i {
   transition: all 0.3s ease;
 }
-#toggleButton:hover{
+#toggleButton:hover {
   transform: scale(1.02);
 }
-#toggleButton:active{
+#toggleButton:active {
   transform: scale(0.95);
 }
-.toggleactive{
+.toggleactive {
   max-height: 250px !important;
   opacity: 1 !important;
 }
-.toggleButtonOpen{
+.toggleButtonOpen {
   transform: rotate(180deg);
 }
 
@@ -427,7 +422,7 @@ header .menu-toggle span {
 .projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-content: start;
+  justify-content: start;
 
   gap: 20px;
 }
@@ -435,7 +430,6 @@ header .menu-toggle span {
 .project-card {
   padding: 24px;
   color: #2d3337;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
   background: #ffffff;
   font-size: 16px;
@@ -548,7 +542,7 @@ header .menu-toggle span {
   letter-spacing: 0.1rem;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
 }
 .skills-main h2 {
   font-size: 3rem;
@@ -646,11 +640,10 @@ header .menu-toggle span {
   gap: 64px;
   padding: 0 24px;
 }
-.services-main .services-text{
+.services-main .services-text {
   text-align: center;
   width: 100%;
-    font-family: 'manrope', sans-serif;
-
+  font-family: "manrope", sans-serif;
 }
 .services-main .services-text span {
   font-size: 14px;
@@ -665,7 +658,6 @@ header .menu-toggle span {
   font-weight: 700;
   line-height: 48px;
   margin-top: 8px;
-
 }
 .services-main .services-text p {
   font-size: 16px;
@@ -695,12 +687,12 @@ header .menu-toggle span {
 }
 .services-main .services-content .service-item:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgb(94, 64, 224,0.4);
+  border: 1px solid rgb(94, 64, 224, 0.4);
 }
-.services-main .services-content .service-item:hover i{
+.services-main .services-content .service-item:hover i {
   transform: scale(1.05);
 }
-.services-main .services-content .service-item i{
+.services-main .services-content .service-item i {
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 900;
@@ -724,7 +716,7 @@ header .menu-toggle span {
   line-height: 2rem;
   text-align: center;
 }
-.services-main .services-content .service-item p{
+.services-main .services-content .service-item p {
   font-family: "manrope", sans-serif;
   font-size: 14px;
   color: #5a6064;
@@ -789,7 +781,7 @@ header .menu-toggle span {
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
 }
 .about-info h2 {
   font-size: 48px;
@@ -837,11 +829,11 @@ header .menu-toggle span {
   font-weight: 700;
   line-height: 2.25rem;
 }
-.about-info .about-number div p{
+.about-info .about-number div p {
   color: #5a6064;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   line-height: 1.25rem;
   margin-top: 4px;
 }
@@ -860,9 +852,9 @@ header .menu-toggle span {
   align-items: center;
   padding: 96px 0;
 }
-.contact-main{
-width: 56%;
-margin: auto;
+.contact-main {
+  width: 56%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -877,12 +869,12 @@ margin: auto;
   color: var(--primary-color);
   letter-spacing: 0.1rem;
   font-weight: 700;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   text-transform: uppercase;
 }
 .contact-main .content-text h2 {
   color: #2d3337;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   font-weight: 700;
   font-size: 48px;
   margin: 8px 0 0;
@@ -900,38 +892,39 @@ margin: auto;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   width: 100%;
-  
 }
-.contact-main form .clint-info div{
+.contact-main form .clint-info div {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.contact-main form  label {
+.contact-main form label {
   font-size: 14px;
   color: #2d3337;
   font-weight: 700;
   margin-left: 16px;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   line-height: 20px;
 }
-.contact-main form .clint-info div input,.contact-main form .message textarea {
+.contact-main form .clint-info div input,
+.contact-main form .message textarea {
   padding: 16px 24px;
-  border: none ;
+  border: none;
   cursor: text;
   display: inline-block;
   font-weight: 400;
   border-radius: 32px;
   font-size: 16px;
   color: #2d3337;
-  background-color:#e4e7eb ;
+  background-color: #e4e7eb;
   line-height: 24px;
   transition: var(--transition);
   outline: 2px solid transparent;
   resize: none;
   font-family: "manrope", sans-serif;
 }
-.contact-main form .clint-info div input:focus ,.contact-main form .message textarea:focus {
+.contact-main form .clint-info div input:focus,
+.contact-main form .message textarea:focus {
   outline: 2px solid rgb(94, 64, 224, 0.3);
 }
 .contact-main form .message {
@@ -942,7 +935,7 @@ margin: auto;
   font-size: 16px;
   color: #2d3337;
 }
-.contact-main form button{
+.contact-main form button {
   color: #fcf7ff;
   background-color: var(--primary-color);
   padding: 16px 0px;
@@ -952,11 +945,11 @@ margin: auto;
   font-weight: 700;
   cursor: pointer;
   font-size: 18px;
-  font-family: 'manrope', sans-serif;
+  font-family: "manrope", sans-serif;
   line-height: 24px;
   transition: all 0.15s ease;
 }
-.contact-main form button i{
+.contact-main form button i {
   margin-left: 4px;
   transition: all 0.3s ease;
 }
@@ -985,25 +978,25 @@ footer {
   background-color: #0f172a;
   font-size: 14px;
   color: #94a3b8;
-  border-radius:48px 48px 0 0 ;
+  border-radius: 48px 48px 0 0;
   line-height: 1.25rem;
 }
-footer .footer-text{
+footer .footer-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px 0;
 }
-footer .footer-text h3{
-  font-family:"Roboto Slab", serif;
+footer .footer-text h3 {
+  font-family: "Roboto Slab", serif;
   color: #ffffff;
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
-footer .footer-text p{
-  font-family: 'manrope', sans-serif;
+footer .footer-text p {
+  font-family: "manrope", sans-serif;
   color: #94a3b8;
   font-size: 14px;
 }
@@ -1012,7 +1005,7 @@ footer .footer-social {
   justify-content: center;
   gap: 32px;
 }
-footer .footer-social a{
+footer .footer-social a {
   color: #94a3b8;
   font-size: 20px;
   padding: 12px 15px;
@@ -1021,9 +1014,9 @@ footer .footer-social a{
   font-weight: 500;
   text-align: center;
 }
-footer .footer-social a:hover{
-  color: #0f172a ;
-  background-color: #94a3b8 ;
+footer .footer-social a:hover {
+  color: #0f172a;
+  background-color: #94a3b8;
 }
 footer .top-arrow {
   background: #ffffff1a;
@@ -1031,7 +1024,7 @@ footer .top-arrow {
   font-size: 14px;
   padding: 12px 24px;
   transition: all 0.15s;
-  border-radius:25px ;
+  border-radius: 25px;
   border: none;
   font-weight: 500;
   border: 0.8px solid rgba(255, 255, 255, 0.1);
@@ -1042,19 +1035,19 @@ footer .top-arrow {
   line-height: 16px;
   text-decoration: uppercase;
 }
-footer .top-arrow i{
+footer .top-arrow i {
   margin-left: 8px;
   transition: all 0.3s ease;
   transform: translateY(1px);
 }
 footer .top-arrow:hover {
-  background: rgb(255, 255, 255,0.15);
+  background: rgb(255, 255, 255, 0.15);
 }
 footer .top-arrow:hover i {
   transform: translateY(-3px);
 }
 /*filter buttons*/
-.hide{
+.hide {
   display: none;
 }
 /*animation*/
@@ -1075,7 +1068,6 @@ footer .top-arrow:hover i {
 }
 
 @media (max-width: 1024px) {
-
   .hero {
     padding: 80px 40px 0;
   }
@@ -1126,7 +1118,6 @@ footer .top-arrow:hover i {
 }
 
 @media (max-width: 860px) {
-
   header {
     width: 92%;
     padding: 10px 16px;
@@ -1151,7 +1142,7 @@ footer .top-arrow:hover i {
       max-height 0.5s ease,
       padding 0.5s ease;
   }
-  header .menu-toggle{
+  header .menu-toggle {
     display: block;
   }
   .hero {
@@ -1200,7 +1191,7 @@ footer .top-arrow:hover i {
   .projects-content {
     grid-template-columns: 1fr;
   }
-  .projects-content .card-img{
+  .projects-content .card-img {
     height: 320px;
   }
 
@@ -1224,7 +1215,6 @@ footer .top-arrow:hover i {
 }
 
 @media (max-width: 594px) {
-
   header p {
     font-size: 18px;
   }
@@ -1241,13 +1231,13 @@ footer .top-arrow:hover i {
     display: none;
   } */
 
-  .projects-btns{
+  .projects-btns {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
   }
 
-  #toggleButton{
+  #toggleButton {
     display: block;
   }
 
@@ -1255,7 +1245,7 @@ footer .top-arrow:hover i {
     width: 100%;
   }
 
-    .projects-content .card-img{
+  .projects-content .card-img {
     height: 200px;
   }
 
@@ -1267,7 +1257,6 @@ footer .top-arrow:hover i {
     font-size: 28px;
   }
 
-
   .about-info h2 {
     font-size: 32px;
   }
@@ -1276,7 +1265,15 @@ footer .top-arrow:hover i {
     font-size: 32px;
   }
 
+  #contact{
+    padding: 48px 0;
+  }
+
   .contact-main .content-text h2 {
     font-size: 32px;
+  }
+
+  footer{
+    margin-top: 48px;
   }
 }

@@ -1,17 +1,29 @@
 ﻿<!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Portifolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <meta charset="UTF-8" />
+    <title>Youssef | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Full Stack Web Developer experienced in building dynamic web applications using HTML, CSS, JavaScript, PHP and SQL. Focused on creating responsive UI, scalable backend systems, and efficient database-driven solutions."
     />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Manrope:wght@200..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="preload" as="image" href="img/me.webp" />
   </head>
   <body>
     <header>
@@ -30,7 +42,13 @@
         <div class="indicator"></div>
       </nav>
       <button id="hireMe">Hire Me</button>
-      <div class="menu-toggle" id="menuToggle">
+      <div
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        role="button"
+        tabindex="0"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -45,7 +63,8 @@
               <div class="info">
                 <p>
                   <span>
-                    <img src="img/star.svg" /> Available for Freelance
+                    <img src="img/star.svg" loading="lazy" alt="starLogo" />
+                    Available for Freelance
                   </span>
                 </p>
               </div>
@@ -71,7 +90,12 @@
           </div>
           <div class="image">
             <div class="hero-img">
-              <img src="img/me.jpeg" />
+              <img
+                src="img/me.webp"
+                fetchpriority="high"
+                loading="eager"
+                alt="it's me"
+              />
             </div>
           </div>
         </div>
@@ -90,7 +114,9 @@
               visual creativity, and attention to detail in every piece.
             </p>
           </div>
-          <button id="toggleButton"><i class="fa-solid fa-chevron-down"></i></button>
+          <button id="toggleButton">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
           <div class="projects-btns">
             <button data-filter="all" class="btn-filter btn-active">All</button>
             <button data-filter="fullStackProject" class="btn-filter">
@@ -108,7 +134,7 @@
             <!-- first project -->
             <div class="project-card" data-category="frontendProject">
               <div class="card-img">
-                <img src="img/resturant.jpg" alt="resturant" />
+                <img src="img/resturant.webp" loading="lazy" alt="resturant" />
               </div>
               <div class="card-info">
                 <span class="span-act">PHP</span>
@@ -128,7 +154,7 @@
             <!-- secound project -->
             <div class="project-card" data-category="fullStackProject">
               <div class="card-img">
-                <img src="img/system.jpg" alt="System Sale" />
+                <img src="img/system.webp" loading="lazy" alt="System Sale" />
               </div>
               <div class="card-info">
                 <span class="span-act">REACT</span>
@@ -145,7 +171,11 @@
             <!-- third project -->
             <div class="project-card" data-category="frontendProject">
               <div class="card-img">
-                <img src="img/porfolio_web.jpeg" alt="Portfolio Website" />
+                <img
+                  src="img/porfolio_web.webp"
+                  loading="lazy"
+                  alt="Portfolio Website"
+                />
               </div>
               <div class="card-info">
                 <span class="span-act">REACT</span>
@@ -253,7 +283,7 @@
           <div class="about-main">
             <div class="about-image">
               <div class="image-content">
-                <img src="img/me-2.jpeg" alt="About Me" />
+                <img src="img/me-2.webp" loading="lazy" alt="About Me" />
               </div>
             </div>
 
@@ -347,22 +377,36 @@
         <a
           href="https://www.facebook.com/profile.php?id=61574378850359"
           target="_blank"
+          aria-label="facebook"
         >
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://www.tiktok.com/@youssef_mohammed_2003" target="_blank">
+        <a
+          href="https://www.tiktok.com/@youssef_mohammed_2003"
+          target="_blank"
+          aria-label="tiktok"
+        >
           <i class="fab fa-tiktok"></i>
         </a>
-        <a href="https://wa.me/201559292723" target="_blank">
+        <a
+          href="https://wa.me/201559292723"
+          target="_blank"
+          aria-label="whatsapp"
+        >
           <i class="fab fa-whatsapp"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/youssef-mohammed-a193283a9"
           target="_blank"
+          aria-label="linkedin"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/Youssef-Mohammed1" target="_blank">
+        <a
+          href="https://github.com/Youssef-Mohammed1"
+          target="_blank"
+          aria-label="github"
+        >
           <i class="fab fa-github"></i>
         </a>
       </div>
