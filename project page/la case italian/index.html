@@ -8,15 +8,24 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Italian Restaurant | Fresh Food & Online Ordering</title>
+    <!-- link icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- link font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- link css -->
     <link rel="stylesheet" href="../style.css" />
+    <!-- linls swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- preload photo -->
     <link
       rel="preload"
       as="image"
@@ -38,7 +47,7 @@
         <div class="indicator"></div>
       </nav>
       <button id="hireMe">go to Portifolio</button>
-            <div
+      <div
         class="menu-toggle"
         id="menuToggle"
         aria-label="Open menu"
@@ -83,44 +92,50 @@
         </div>
       </section>
       <!-- Image Gallery (Bento Style) -->
-      <section id="gallery">
-        <div class="gallery-grid">
-          <div>
+      <section id="gallery" class="swiper">
+        <div class="gallery-grid swiper-wrapper">
+          <div class="swiper-slide">
             <img
               src="resturant/one.webp"
               loading="lazy"
               alt="first img to web"
             />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img
               src="resturant/2.webp"
               loading="lazy"
               alt="secound img to web"
             />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img src="resturant/5.webp" loading="lazy" alt="third img to web" />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img src="resturant/6.webp" loading="lazy" alt="forth img to web" />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img src="resturant/3.webp" loading="lazy" alt=" five img to web" />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img src="resturant/8.webp" loading="lazy" alt="six img to web" />
           </div>
-          <div>
+          <div class="swiper-slide">
             <img src="resturant/4.webp" loading="lazy" alt="siven img to web" />
           </div>
-          <div class="gallery-info">
+          <div class="gallery-info swiper-slide">
             <div>
               <span><i class="fa-solid fa-rocket"></i></span>
               <p>Engineered for <br />0.4s LCP</p>
             </div>
           </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </section>
       <!-- Project Narrative -->
       <section id="narrative">
@@ -257,6 +272,9 @@
         </button>
       </div>
     </footer>
+    <!-- link swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- script -->
     <script src="../script.js"></script>
   </body>
 </html>
