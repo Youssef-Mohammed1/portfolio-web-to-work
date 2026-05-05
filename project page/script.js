@@ -86,7 +86,7 @@ navLinks.forEach(link => {
   });
 });
 
-// Swiper js
+/**swiper js **/ 
  new Swiper('.swiper', {
   // Optional parameters
   loop: true,

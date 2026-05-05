@@ -146,7 +146,7 @@ function turnoff() {
   }
 }
 /*************************** */
-/**************************************************************************************** */
+/****************************************not in clean js file************************************************ */
 /*email js */
 emailjs.init("Zh8nySsmxN3kG-4tU"); // Puplic key
 
@@ -164,11 +164,24 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   })
   .then(() => {
     document.getElementById("contactForm").reset();
-    alert("Message sent successfully!");/*هانعدلها */
+  //  alert message
+  Swal.fire({
+  toast: true,
+  position: 'top-end',
+  icon: 'success',
+  title: 'Message sent!',
+  showConfirmButton: false,
+  timer: 3000
+});
   })
   .catch((error) => {
-    alert("Error sending message");
-    console.log(error);/*هانعدلها */
+  //  alert message
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Error sending message',
+    confirmButtonColor: '#7156f5'
+  });
   });
 
 });
