@@ -441,7 +441,7 @@ header .menu-toggle span {
 /*card image*/
 .card-img {
   margin: 0 0 24px;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
   height: 208px;
   width: 100%;
@@ -454,7 +454,7 @@ header .menu-toggle span {
   transition: all 0.3s ease;
 }
 .project-card:hover {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
   transform: translateY(-8px);
 }
 .project-card:hover img {
@@ -494,7 +494,7 @@ header .menu-toggle span {
 }
 /*project card description*/
 .project-card p {
-  margin: 0 0 24px;
+  margin: 0 0 38px;
   font-family: sans-serif;
   font-size: 14px;
   color: #5a6064;
@@ -506,7 +506,7 @@ header .menu-toggle span {
   bottom: 24px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   text-decoration: none;
   color: var(--primary-color);
   font-size: 14px;
@@ -517,7 +517,7 @@ header .menu-toggle span {
   cursor: pointer;
 }
 .project-card a:hover {
-  gap: 8px;
+  gap: 10px;
 }
 /*model or new tab to show details */
 
@@ -603,9 +603,9 @@ header .menu-toggle span {
   font-weight: 900;
   line-height: 1.3;
 }
-.skills-main .skills-content .skill-item .php-icon {
-  color: #818cf8;
-  font-size: 10px;
+.skills-main .skills-content .skill-item .git-icon {
+  color: #000000;
+  font-size: 22px;
   font-weight: 900;
   line-height: 1.2;
 }

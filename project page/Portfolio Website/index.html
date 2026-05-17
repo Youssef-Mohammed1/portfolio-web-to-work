@@ -1,0 +1,296 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Modern Italian restaurant with fresh dishes, online ordering via WhatsApp, and table reservations."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian Restaurant | Fresh Food & Online Ordering</title>
+    <!-- link icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- link font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- linls swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- preload photo -->
+    <link
+      rel="preload"
+      as="image"
+      href="resturant/myimageupscaler_quick_newq.webp"
+    />
+  </head>
+  <body>
+    <!-- TopNavBar Shared Component -->
+    <header>
+      <div>YOUSSEF.PROJECT</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#narrative">Narrative</a></li>
+          <li><a href="#features">Functionalities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="indicator"></div>
+      </nav>
+      <button id="hireMe">go to Portifolio</button>
+      <div
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        role="button"
+        tabindex="0"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="home">
+        <div class="hero-content">
+          <div class="hero-head">
+            <h1>
+              Italian <br />
+              <span>Restaurant </span> Experience
+            </h1>
+          </div>
+          <div class="hero-description">
+            <div>
+              <p class="hea">Project Identity / 2025</p>
+              <p class="dis">
+                An all-in-one Italian web platform crafted for seamless
+                browsing, elegant design, and a refined user experience across
+                all devices.
+              </p>
+              <!-- منصة إيطالية متكاملة مصممة لتصفح سلس، وتصميم أنيق، وتجربة مستخدم راقية على جميع الأجهزة. -->
+            </div>
+          </div>
+        </div>
+        <!-- Main Project Image -->
+        <div class="hero-image">
+          <div>
+            <img
+              src="resturant/myimageupscaler_quick_newq.webp"
+              alt="hero img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Image Gallery (Bento Style) -->
+      <section id="gallery" class="swiper">
+        <div class="gallery-grid swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="resturant/hero.webp"
+              loading="lazy"
+              alt="hero section image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="resturant/about.webp"
+              loading="lazy"
+              alt="about section image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/dishs.webp" loading="lazy" alt="dishes section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/dishs2.webp" loading="lazy" alt="dishes section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/review.webp" loading="lazy" alt="reviews section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/location.webp" loading="lazy" alt="location section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/footer.webp" loading="lazy" alt="footer section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/book table.webp" loading="lazy" alt="booking modal image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/menu.webp" loading="lazy" alt="menu section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/menu2.webp" loading="lazy" alt="menu section image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/make oredr.webp" loading="lazy" alt="make order modal image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="resturant/make order 2.webp" loading="lazy" alt="make order modal image" />
+          </div>
+
+          <div class="gallery-info swiper-slide">
+            <div>
+              <span><i class="fa-solid fa-rocket"></i></span>
+              <p>Engineered for <br />1.5s LCP</p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <!-- Project Narrative -->
+      <section id="narrative">
+        <div class="narrative-content">
+          <div class="narrative-text">
+            <h2>The Narrative</h2>
+            <p>
+              The website features a modern and visually appealing
+              Italian-inspired design with a smooth and intuitive user
+              interface. It includes an engaging hero video that showcases the
+              cooking process, immediately capturing the visitor’s attention.
+              The structure highlights the chef’s profile with a brief overview
+              of experience and professional background, along with a curated
+              selection of signature dishes presented in high-quality visuals.
+              Customer reviews are integrated to build trust and credibility,
+              while the interactive menu allows users to filter dishes by
+              category and add items to the cart seamlessly.
+            </p>
+            <p>
+              The platform also supports a simple and efficient ordering flow
+              where users enter their phone number and address, and the order is
+              instantly sent to the restaurant via WhatsApp. A table reservation
+              system is included, allowing customers to select the number of
+              guests and confirm their booking with assigned table details. The
+              website is fully responsive across all devices, ensuring smooth
+              performance on mobile, tablet, and desktop. A well-structured
+              footer provides navigation links, section shortcuts, contact
+              details, and the restaurant address, while subtle animations
+              enhance the overall user experience and interactivity.
+            </p>
+          </div>
+          <div class="narrative-info">
+            <div>
+              <h3>99.9%</h3>
+              <p>Uptime Target</p>
+            </div>
+            <div>
+              <h3>45%</h3>
+              <p>Conv. Increase</p>
+            </div>
+            <div>
+              <h3>Stack</h3>
+              <p>JavaScript</p>
+            </div>
+            <div>
+              <h3>Type</h3>
+              <p>Frontend</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Grid -->
+      <section id="features">
+        <h2>Key Functionalities</h2>
+        <div class="features-content">
+          <div>
+            <span><i class="fa-solid fa-leaf"></i></span>
+            <h4>Fresh Ingredients Daily</h4>
+            <p>
+              Carefully sourced fresh ingredients prepared daily to deliver
+              exceptional flavor and consistent quality in every dish.
+            </p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-comments"></i></span>
+            <h4>Instant WhatsApp Ordering</h4>
+            <p>
+              Seamless order placement that instantly connects customers with
+              the restaurant via WhatsApp for fast, direct communication and
+              confirmation.
+            </p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-display"></i></span>
+            <h4>Responsive Fluid Layout</h4>
+            <p>
+              A flexible layout that automatically adjusts to any screen size
+              for a smooth experience across all devices.
+            </p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-bolt"></i></span>
+            <h4>High-Performance SSR</h4>
+            <p>
+              High-performance server-side rendering (SSR) that ensures
+              ultra-fast page loads and significantly improved website
+              performance and user experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section id="contact">
+        <div>
+          <!-- Abstract Background Ornament -->
+
+          <h2>Ready to build the <br />next generation?</h2>
+          <button id="cmBtn">Let's discuss a similar project</button>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-text">
+        <h3>Youssef_Elattafy.Dev</h3>
+        <p>&copy; 2026 Youssef Elattafy. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/profile.php?id=61574378850359"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@youssef_mohammed_2003" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/201559292723" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/youssef-mohammed-a193283a9"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Youssef-Mohammed1" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div>
+        <button id="topArrow" class="top-arrow">
+          Back To Top <span> <i class="fa-solid fa-arrow-up"></i></span>
+        </button>
+      </div>
+    </footer>
+    <!-- link swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- script -->
+    <script src="../script.js"></script>
+  </body>
+</html>
