@@ -203,7 +203,7 @@ main {
 .hero-image div {  
   border-radius: 3rem;
   overflow: hidden;
-  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
   width: 98%;
   margin: 48px auto 0;
 }
@@ -247,6 +247,8 @@ main {
   transition: all 0.3s ease;
   cursor: grab;
   border: 1px solid transparent;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+
 }
 .gallery-grid div img:hover{
   border: 1px solid rgba(113, 86, 245, 0.5);
