@@ -1292,3 +1292,9 @@ footer .top-arrow:hover i {
     margin-top: 48px;
   }
 }
+@media (max-width: 380px){
+.image .hero-img img {
+  width: 300px;
+  height: auto;
+}
+}
