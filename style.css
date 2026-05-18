@@ -1269,7 +1269,7 @@ footer .top-arrow:hover i {
   }
 
 .about-section{
-  width: 80%;
+  width: 85%;
 }
 .about-main .about-image .image-content::after{
   width: 120px;
@@ -1277,6 +1277,7 @@ footer .top-arrow:hover i {
   top: -40px;
   right: -10px;
 }
+
 
   #contact{
     padding: 48px 0;
@@ -1287,6 +1288,7 @@ footer .top-arrow:hover i {
   }
 
   footer{
+    padding: 40px 48px;
     margin-top: 48px;
   }
 }
