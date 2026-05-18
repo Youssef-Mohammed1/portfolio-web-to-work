@@ -91,7 +91,7 @@ header nav ul li a:hover {
 }
 /*header button*/
 header button {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #7156f5;
   color: #fff;
   border: none;
@@ -277,7 +277,7 @@ header .menu-toggle span {
   text-align: center;
 }
 .image .hero-img img {
-  width: 400px;
+  width: 380px;
   height: 521px;
   overflow: hidden;
   border-radius: 60px;
