@@ -605,7 +605,7 @@ footer .top-arrow:hover i {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   
   main{
 padding-bottom: 48px;
@@ -628,6 +628,9 @@ padding-bottom: 48px;
   }
 
   /* HERO */
+  #home{
+    gap: 24px;
+  }
   .hero-content {
     flex-direction: column;
     align-items: flex-start;
@@ -636,6 +639,7 @@ padding-bottom: 48px;
 
   .hero-content .hero-head h1 {
     font-size: 3rem;
+    margin-bottom: 22px;
   }
 
   .hero-content .hero-description .dis {
@@ -646,6 +650,10 @@ padding-bottom: 48px;
   /* IMAGE */
   .hero-image {
     width: 100%;
+
+  }
+  .hero-image div{
+    margin: 24px auto 0;
   }
 
   /* GALLERY */
