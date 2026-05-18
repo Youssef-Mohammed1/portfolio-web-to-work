@@ -1228,7 +1228,7 @@ footer .top-arrow:hover i {
   }
 
 .project-main {
-  width: 90%;
+  width: 95%;
 }
   .projects-btns {
     max-height: 0;
@@ -1269,7 +1269,13 @@ footer .top-arrow:hover i {
   }
 
 .about-section{
-  width: 90%;
+  width: 85%;
+}
+.about-main .about-image .image-content::after{
+  width: 120px;
+  height: 120px;
+  top: -40px;
+  right: -10px;
 }
 
   #contact{
